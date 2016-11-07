@@ -98,12 +98,7 @@ a {
 /*******************************************/
 
 .skim-me  {
-
-  position:absolute;
-  
-
-
-
+  margin: 0 auto;
 }
 
 .thumb > img {
