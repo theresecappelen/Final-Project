@@ -1,0 +1,197 @@
+
+
+/******************************************
+/* Drop-down menu
+/*******************************************/
+
+/*
+ul {
+  
+  width:65%;
+
+}
+ul li {
+  list-style: none;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  
+}
+ul li a {
+  position: relative;
+  text-decoration: none;
+  padding: 0px 15px 5px 25px;
+  display: block;
+  width: 300px;
+  z-index: 5000;
+}
+ul li a i {
+  
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  color: black;
+  
+}
+ul li .drop-down {
+  position: absolute;
+  padding: 0;
+  display: none;
+  margin: 0;
+  left: 0;
+  z-index: 20;
+}
+
+ul li .drop-down li {
+  position: relative;
+  float: none;
+}
+
+ul li .drop-down li a {
+  border-top: none;
+  width: 150px;
+  color:black;
+}
+
+ul li .drop-down li a:hover {
+  color: blue;
+}
+/*ul li .drop-down li:nth-of-type(1) a {
+  border-top: none;
+}*/
+/*
+.accent {
+  width: 0%;
+  height: 100%;
+  background: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.item:hover {
+  color: black;
+}
+
+.item {
+  color: black;
+}
+
+.infotext {
+
+  width:600px;
+
+}
+
+.drop-down_info {
+
+  width:600px;
+
+}
+*/
+
+
+/******************************************
+/* ROTATING THE X 
+/*******************************************/
+
+.contact {
+  position:fixed;
+  bottom:30px;
+  right:30px;
+  color:black;
+  font-size: 20px;
+  
+}  
+
+/*
+#contact:hover { 
+    color:#afafaf;
+    -moz-animation: spin .9s 1 ease;
+    -o-animation: spin .9s 1 linear;
+    -webkit-animation: spin .9s 1 linear;
+    animation: spin .s 1 linear;
+}*/
+
+/*#spin:hover { 
+    color:#afafaf;
+    -moz-animation: spin .4s 1 ease;
+    -o-animation: spin .4s 1 linear;
+    -webkit-animation: spin .4s 1 linear;
+    animation: spin .4s 1 linear;
+}*/
+
+p > span:hover {
+
+    color:red;
+
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(359deg); }
+}
+
+@-moz-keyframes spin {
+    0% { -moz-transform: rotate(0deg); }
+    100% { -moz-transform: rotate(359deg); }
+}
+
+@-o-keyframes spin {
+    0% { -o-transform: rotate(0deg); }
+    100% { -o-transform: rotate(359deg); }
+}
+
+@-ms-keyframes spin {
+    0% { -ms-transform: rotate(0deg); }
+    100% { -ms-transform: rotate(359deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(359deg); }
+}
+
+.col-l {
+  float: left;
+  width: 40%;
+ 
+ 
+}
+.col-r {
+  float: right;
+  width: 100%;
+  overflow: hidden;
+ 
+}
+
+.col-r > p {
+  width:80%;
+ 
+}
+
+.full-page {
+  box-sizing: border-box;
+  width: 120%;
+  font-weight: bold;
+}
+.mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 40%;
+  bottom: 0;
+  overflow: hidden; 
+}
+.page-content {
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+/*
+THIS IS SOMETHING ELSE?*/

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>No Anchor links - fullPage.js</title>
+  <meta name="author" content="Alvaro Trigo Lopez" />
+  <meta name="description" content="fullPage.js with no anchor links." />
+  <meta name="keywords"  content="fullpage,jquery,anchor,links,inside,demo" />
+  <meta name="Resource-type" content="Document" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullPage.css" />
+  <!--[if IE]>
+    <script type="text/javascript">
+       var console = { log: function() {} };
+    </script>
+  <![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="../jquery.fullPage.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage'],
+        menu: '#menu',
+      
+        loopBottom: true,
+        // navigation: true,
+        // navigationPosition: 'right',
+        // navigationTooltips: ['First page', 'Second page', 'Third and last page']
+      });
+    });
+  </script>
+
+</head>
+
+  <body>
+
+            <nav class="main-nav">
+            <!-- <h1>Manu+Facere</h1> -->
+
+     <!--          <ul>
+      <li><a href="#" class="item">Projects <i class="fa fa-chevron-down"></i></a>
+        <span class="accent"></span>
+        <ul class="drop-down">
+          <li><a href="manu-facere.html">Manu + Facere</a></li>
+          <li><a href="lk.html">Louise Körner</a></li>
+          <li><a href="sno.html">Snö</a></li>
+          <li><a href="csm.html">CSM exhibition Catalogue</a></li>
+        </ul>
+      </li> -->
+
+        
+                   <ul>
+                       <!--  <div class="link-cont">           
+                            <a class="link hover-3" href="index.html">X<span>  </span></a>
+                        </div>
+                      </div>   --> 
+                       <div class="link-cont">
+                            <a class="link hover-3" id="contact" href="index.html">About me</a>
+                      </div>
+
+
+                 </ul> 
+             </nav>
+
+
+  
+
+
+<div class="container-cursor-cross">
+<a href="testindex.html">  
+<!-- How to link this up so that when pressed you get to the next page. Can I put a class around each section linking to the next?  -->
+
+
+
+
+  <div id="fullpage">
+
+      <div class="section " id="section0">
+      <div class="scroll-down">
+        <div class="box fade-in one">
+      
+             <!-- <h2>Manu + Facere </h2>
+             <h3>Editorial / Concept / Print</h3> -->
+             <p> Graphic Thought Facility is a London-based design 
+                 consultancy with an international reputation for appropriate, effective and original solutions. Recent commissions include store  for M&S, exhibition design for the Science Museum, books for the Gagosian Gallery, wayfinding for Vitra, and campaigns for Kvadrat and the Frieze Art Fair. </p>
+             <br>
+
+             <p> Editorial / Concept / Print </p>
+           </div> 
+        </div>
+      </div>
+
+  </div>
+  </div> <!-- this is the div for cross -->
+</body>
+
+    <script src="js/shuffle/jquery.shuffle-images.js"></script>
+    <script src="js/fullpage/jquery.fullPage.js"></script>
+    <script src="js/main.js"></script>
+    
+    
+</html>
+
+  
+
+
+  
+
+

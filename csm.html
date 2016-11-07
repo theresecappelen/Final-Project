@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>No Anchor links - fullPage.js</title>
+  <meta name="author" content="Alvaro Trigo Lopez" />
+  <meta name="description" content="fullPage.js with no anchor links." />
+  <meta name="keywords"  content="fullpage,jquery,anchor,links,inside,demo" />
+  <meta name="Resource-type" content="Document" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullPage.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+ <!-- <script type="text/javascript" src="js/fullpage/vendors/scrolloverflow.js"></script> -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        loopBottom: true,
+        // scrollBar: true,
+        // navigation: true,
+        // navigationPositivon: 'right',
+        // navigationTooltips: ['First page', 'Second page', 'Third and last page']
+      });
+    });
+  </script>
+
+</head>
+
+  <body>
+
+        <header>  
+
+            <nav class="main-nav">
+              <ul>
+                 <div class="link-cont">          
+                    <a class="link hover-3" href="#">Central Saint Martins</a>
+                 </div>
+                 <div class="link-cont">          
+                    <a class="link hover-2" href="#">Contact</a>
+                 </div>
+
+              </ul>
+            </nav>
+
+         </header>
+
+            
+
+
+
+
+<div class="container-cursor-cross">
+<a href="hover.html">  
+<!-- How to link this up so that when pressed you get to the next page. Can I put a class around each section linking to the next?  -->
+
+
+
+
+  <div id="fullpage">
+
+      <div class="section " id="#">
+
+      <div class="scroll-down">
+        <div class="box fade-in one">
+      
+             <p>A publication designed for the Central Saint Martins degree show. The layout mimics the experience of visiting the degree show - a continuous flow of consciousness. A fluid layout with an invisible grid in between the pages help create a unified publication of a diverse range of work. To enhance clarity, the students’ work is divided into 8 chapters titled as questions to guide the reader through the experience. Each question starts with a selected dissertation excerpt that gives further context to that section.</p>
+             <br>
+
+             <p> Art-direction / Design / Print </p> 
+               
+           </div> 
+        </div>
+      </div>
+
+
+
+
+      <div class="section" id="#">
+        <div class="intro">
+          <div class="caption">
+            <p> <span> * </span>The transparency of the sleeve implies ‘intangibility’, which reflects modern craft media like code. Transparency is also key to the political aspects of modern craft; open-source values the transparent sharing of information.</p>
+        </div>
+
+           <img class="img-small" src="images/project-three/1.jpg" alt="fullPage" />
+        </div>
+
+      </div>
+
+
+      <div class="section" id="section2">
+        <div class="intro">
+
+         <div class="caption">
+            <p> <span> * </span>The transparency of the sleeve implies ‘intangibility’, which reflects modern craft media like code. Transparency is also key to the political aspects of modern craft; open-source values the transparent sharing of information.</p>
+        </div>
+
+           <img class="img-small" src="images/project-three/1.jpg" alt="fullPage" />
+
+          </div>
+      </div>
+
+       <div class="section" id="section3">  
+        <div class="intro">
+           <img class="img-small" src="images/project-three/2.jpg" alt="fullPage" />
+        </div>
+      </div>
+
+       <div class="section" id="section4">
+        <div class="caption" id="">
+            <p> The ‘Villard diagram’ provides the framework for layout. William Morris returned to this diagram for his work. As many consider Morris the ‘grandfather’ of craft, the Villard diagram became a perfect starting point for layout. Symmetrical spreads created through this grid imply balance and equality, reflecting Morris’ opinions of craft.</p>
+        </div>  
+        <div class="intro">
+           <img class="img-small" src="images/project-three/7.jpg" alt="fullPage" />
+        </div>
+      </div>
+
+       <div class="section" id="section5">
+        <div class="caption" id="">
+            <p> <span> * </span> The reversed page numbers imply a return to origins, which captures elements of nostalgia within craft.</p>
+        </div> 
+        <div class="intro">
+           <img class="img-small" src="images/project-three/10.jpg" alt="fullPage" />
+        </div>
+      </div>
+
+  </div>
+  </div> <!-- this is the div for cross -->
+</body>
+
+    <script src="js/fullpage/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="./js/skim/js/jquery.skim.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+            $(window).bind("load", function() {
+              $(".skim-me").skim();
+            });
+          });
+        </script>
+    
+    <script src="js/main.js"></script>
+
+        
+    
+</html>
+
+  
+
+
+  
+
+

@@ -1,14 +1,8 @@
 /* 
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
+Project Name: T-studio website
+Client: T-studio
+Author: Therese Cappelen
 */
-
-/******************************************
-/* COLOURS
-/*******************************************/
-
-/* add a list of colours used in the project */
 
 /******************************************
 /* SENSIBLE DEFAULTS                   
@@ -16,35 +10,478 @@ Author: Your Name
 
 * {
      box-sizing: border-box;
+     
 }
+
+
 img {
-	max-width:100%;
+  display: block;
+  cursor: url(../images/plus.png), auto;
+  
 }
+
 
 /******************************************
 /* TYPOGRAPHY
 /*******************************************/
 
-/* add type styles here */
+@font-face {
+
+  font-family: moderat; 
+  src: url(../moderat/regular.woff2);
+  font-weight: regular; 
+
+} 
+
+h1 { 
+
+  font-size: 15px;
+  font-family: moderat;  
+  position:fixed;
+  top:23px;
+  left:80px;
+
+}
+
+
+h2 {
+
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-family: moderat;
+  text-align: left;
+  max-width:900px;
+  margin:0 0 0 300px;
+
+}
+
+h3 {
+
+  font-size: 20px;
+  margin:10px 0 0 300px;
+  padding-bottom:15px;
+  font-family: moderat;
+
+}
+
+p {
+  font-size:17px;
+  max-width:600px;
+  margin:16px 0 0 250px;
+  font-family: moderat;
+
+}
+
+p > span { 
+  font-size: 25px;
+  color:blue;
+ }
+
+li {
+  list-style: none; 
+  list-style-type: none;  
+ /* display:inline-block;*/
+ }
+
+
+a {
+  text-decoration: none;
+  color:blue; 
+  font-size: 16px;
+  padding-right: 60px;
+  font-family: moderat;
+}
 
 
 /******************************************
-/* LAYOUT                   
+/* Skim Container 
 /*******************************************/
 
-.site-container {
-	max-width: 960px;
-	margin: 0 auto;
-}
+.skim-me  {
 
-.site-header {
+  position:absolute;
+  
 
-}
-.site-content {
+
 
 }
+
+.thumb > img {
+ position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  width: 100%;
+}
+
+thumb img:first-child {
+  display: block;
+}
+
+
+
+.thumb {
+
+  width: 60%;
+  margin: 0 auto;
+  overflow: hidden;
+  vertical-align: middle;
+  position: relative;
+
+
+
+}
+
+#container {
+  margin-top: 50px;
+  width: 100%;
+  overflow: auto;
+ /* height:700px;*/
+  overflow: auto;
+  
+}
+
+/*.preview {
+  width: 65%;
+  overflow: auto;
+}
+*/
+
+/******************************************
+/* PROJECT: Image Size
+/*******************************************/
+
+.menu > li > a {
+
+  font-size: 14px;
+  color:black;
+  text-align: left;
+  cursor:pointer;
+
+}
+
+.menu > li > a:hover {
+  color:blue;
+  
+
+}
+
+.menu {
+
+ position:absolute;
+ top:50px;
+ padding-left:0;
+ margin-left: 30px;
+ cursor:pointer;
+ z-index: 10;
+
+}
+
+.img-x-small {
+
+  width:30%;
+  margin:0 20% 0 20%;
+
+}
+
+.img-small {
+  width:60%;
+  margin:0 20% 0 20%;
+}
+
+.img-m {
+
+  width:40%;
+  margin:0 30% 0 30%;
+
+}
+
+.img-full {
+   width:100%;
+   margin:0 0 0 0;
+}
+
+
+ /******************************************
+/* PROJECT: Captions           
+/*******************************************/
+
+  .caption {
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.caption > p {
+
+  font-size: 14px;
+  position:absolute;
+  right:45px;
+  top:10%;
+  max-width:15vw;
+  z-index: 20;
+}
+
+  .caption-left  {
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.caption-left > p {
+
+  font-size: 13px;
+  position:absolute;
+  left:-250px;
+  top: 50%;
+  max-width:15vw;
+}
+
+ /******************************************
+/* Cursors            
+/*******************************************/
+
+
+.container-cursor {
+  width: 100%;
+  height:100%;
+  cursor: url(../images/cross.png), auto;
+}
+
+.container-cursor-cross > a { 
+
+  color:black;
+  cursor: url(../images/cross.png), auto;
+
+ }
+
+.scroll-down {
+  width:100%;
+  height: 100%;
+  z-index: 10;
+  cursor: url(../images/down-blue-03.png), auto;
+  /*border: 1px solid red;*/
+
+}
+
+.shuffle-me > img {
+   cursor: url(../images/plus.png), auto;
+
+}
+
+
+/******************************************
+/* Contacts Page & Nav
+/*******************************************/
+
+/*
+@import "compass/css3";
+
+.main-nav {
+  position: fixed;
+  top: 10px;
+  font-size: 20px;
+  width: 100%;
+  height: 30px;
+  text-align: left;
+  z-index: 1;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+ 
+
+}*/
+
+/******************************************
+/* Contacts Page Divided Scroll
+/*******************************************/
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 30px;
+
+}
+.main-nav li {
+  display: inline-block;
+}
+.main-nav a:link,
+.main-nav a:visited {
+  display: inline-block;
+
+}
+.main-nav a:hover,
+.main-nav a:active {
+  
+}
+
+.large-text-left > p {
+
+  font-size: 100px;
+  margin-left:300px;
+   padding-top: 150px;
+
+}
+
+.large-text-right > p {
+
+  font-size: 100px;
+  margin-left:300px;
+  padding-top: 150px;
+
+
+}
+
+.m-text > p {
+
+   font-size: 20px;
+    max-width:none;
+    margin-left:20px;
+    padding-top: 120px;
+    padding-right: 50px;
+
+
+}
+
+.left-text > p {
+
+    font-size: 25px;  
+    padding-top: 120px;
+
+
+}
+
+
 .site-footer {
+  font-size: 15px;
+  color:grey;
+  position:absolute;
+  display:none;
+}
 
+/******************************************
+/* Index menu animation interaction (Done)
+/*******************************************/
+
+.link-cont {
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+}
+.link {
+  display: inline-block;
+  position: relative;
+  color: blue;
+  text-decoration: none;
+  padding: 10px 0;
+}
+.link-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+}
+
+.hover-3 { 
+position:fixed;
+top:20px;
+left:30px;
+font-size: 17px;
+
+ }
+
+.hover-3:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: blue;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s;
+}
+.hover-3:hover:after {
+  transform: scaleX(1);
+}
+
+.hover-2 { 
+position:fixed;
+bottom:20px;
+right:30px;
+font-size: 17px;
+
+ }
+
+.hover-2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: blue;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s;
+}
+.hover-2:hover:after {
+  transform: scaleX(1);
+}
+
+
+
+
+
+/******************************************
+/* Landing pages /  Fade in 
+/*******************************************/
+
+@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:0.5s;
+    -moz-animation-duration:0.5s;
+    animation-duration:0.5s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.1s;
+-moz-animation-delay: 0.1s;
+animation-delay: 0.1s;
+}
+
+/******************************************
+/* RESPONSIVE
+/*******************************************/
+
+@media screen and (max-width:390px) {
+  .x {
+    
+  }
 }
 
 /******************************************
@@ -68,10 +505,6 @@ img {
      display: block;
 }
 
-
-/******************************************
-/* ADDITIONAL STYLES                   
-/*******************************************/
 
 
 
