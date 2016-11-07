@@ -257,10 +257,10 @@ thumb img:first-child {
 
 }
 
-.shuffle-me > img {
+/*.shuffle-me > img {
    cursor: url(../images/plus.png), auto;
 
-}
+}*/
 
 
 /******************************************
@@ -500,6 +500,13 @@ animation-delay: 0.1s;
      display: block;
 }
 
+body {
+  cursor: url(../images/cross.png), auto;
+}
+
+.skim-me {
+  cursor: url(../images/plus.png), auto;
+}
 
 
 
